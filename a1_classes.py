@@ -1,6 +1,6 @@
 """
 Name:Junjie Yang
-Date:07/06/2023
+Date:07/06/2023-10/06/2023
 Brief Project Description: Use class to re-draw the content of assessment1.
 GitHub URL:https://github.com/JCUS-CP1404/cp1404---travel-tracker---assignment-2-junjieyang-david
 """
