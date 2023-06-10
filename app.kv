@@ -1,2 +1,80 @@
 # Create your Kivy layout in the kv language here
 BoxLayout:
+    sorter:sorter
+    place_list: place_list
+    top_bar: top_bar
+    bottom_bar: bottom_bar
+    BoxLayout:
+        orientation: "horizontal"
+        BoxLayout:
+            orientation: "vertical"
+            size_hint_x: 1
+            Label:
+                text:"Sort by:"
+                size_hint_y:None
+                height:dp(60)
+            Spinner:
+                id:sorter
+                text:'Please choose a key'
+                height:dp(60)
+                size_hint_y:None
+                values:('name','country','priority','is_visited')
+                on_text:app.places_list(sorter.text)
+
+            Label:
+                text:"Add New Place..."
+                size_hint_y:None
+                height:dp(90)
+            Label:
+                text:"Name"
+                size_hint_y:None
+                height:dp(60)
+            TextInput:
+                write_tab: False
+                id: name_input
+                size_hint_y: None
+                height: dp(50)
+
+            Label:
+                text:"Country"
+                size_hint_y:None
+                height:dp(60)
+            TextInput:
+                write_tab:False
+                size_hint_y:None
+                height:dp(50)
+                id:country_input
+
+            Label:
+                text:"Priority"
+                size_hint_y:None
+                height:dp(50)
+            TextInput:
+                write_tab:False
+                id:priority_input
+                size_hint_y:None
+                height:dp(50)
+
+            Button:
+                text:"Add Place"
+                size_hint_y:2
+                on_press:app.add(name_input,country_input,priority_input)
+            Button:
+                text:"Clear"
+                size_hint_y:2
+                on_press:app.clear_input_field(name_input,country_input,priority_input)
+
+        BoxLayout:
+            orientation:"vertical"
+            size_hint_x:3
+            Label:
+                id:top_bar
+                size_hint_y:None
+                height:50
+            BoxLayout:
+                orientation:'vertical'
+                id:place_list
+            Label:
+                id:bottom_bar
+                height:50
+                size_hint_y:None
