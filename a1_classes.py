@@ -2,7 +2,7 @@
 Name:Junjie Yang
 Date:07/06/2023-10/06/2023
 Brief Project Description: Use class to re-draw the content of assessment1.
-GitHub URL:https://github.com/JCUS-CP1404/cp1404---travel-tracker---assignment-2-junjieyang-david
+GitHub URL:https://github.com/junjieyang-david/cp1404---travel-tracker---assignment-2-junjieyang-david-master
 """
 # Copy your first assignment to this file, then update it to use Place class
 # Optionally, you may also use PlaceCollection class

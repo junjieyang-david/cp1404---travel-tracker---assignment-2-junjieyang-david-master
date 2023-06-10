@@ -2,7 +2,7 @@
 Name:Junjie Yang
 Date:07/06/2023
 Brief Project Description:This file establishes the function of the Place class of the subsequent program.
-GitHub URL:https://github.com/JCUS-CP1404/cp1404---travel-tracker---assignment-2-junjieyang-david
+GitHub URL:https://github.com/junjieyang-david/cp1404---travel-tracker---assignment-2-junjieyang-david-master
 """
 
 
